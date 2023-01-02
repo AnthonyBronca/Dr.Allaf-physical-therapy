@@ -16,6 +16,7 @@ const removeUser = () => { //action
     };
 };
 
+
 // imagining what store.dispatch looks like under the hood
 // store = {
 //   dispatch(actionOrThunk) {
