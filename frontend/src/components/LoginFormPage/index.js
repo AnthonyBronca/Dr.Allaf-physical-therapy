@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import * as sessionActions from '../../store/session';
 import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
+import './LoginForm.css';
 
 function LoginFormPage() {
     const dispatch = useDispatch();
@@ -32,7 +33,7 @@ function LoginFormPage() {
                 </ul>
                 <div className='login-items-container'>
                     <div className='login-field'>
-                        <label>
+                        <label className='username-field'>
                             Username or Email
                             <input
                                 type="text"
@@ -42,19 +43,21 @@ function LoginFormPage() {
                             />
                         </label>
                     </div>
-                    <div className='password-field'>
-                        <label>
-                            Password
-                            <input
-                                type="password"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                                required
-                            />
-                        </label>
+                    <div className='password-field-container'>
+                        <div className='password-field'>
+                            <label className='authentication-field'>
+                                Password
+                                <input
+                                    type="password"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    required
+                                />
+                            </label>
+                        </div>
                     </div>
                 </div>
-                <button type="submit">Log In</button>
+                <button id='login-button' type="submit">Log In</button>
             </div>
         </form>
     );

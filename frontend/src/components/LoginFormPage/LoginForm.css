@@ -1,4 +1,37 @@
 .login-items-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.login-field{
+    padding-left: 2rem;
+}
+
+.username-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.username-field > input{
+    width: 7.5rem
+}
+
+
+.password-field{
+    padding-left: 2rem;
+}
+
+.authentication-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.authentication-field > input{
+    width: 7.5rem
+}
+
+#login-button{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    width: 8rem;
 }
