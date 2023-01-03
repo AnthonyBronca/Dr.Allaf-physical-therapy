@@ -35,10 +35,10 @@ function ProfileButton({ user }) {
     return (
         <>
             <button onClick={openMenu}>
+                <FontAwesomeIcon icon={faUser} className='user-icon' />
             </button>
             {showMenu && (
                 <ul className="profile-dropdown">
-                    <FontAwesomeIcon icon={faUser} className='location-pin' />
                     <li>{user.username}</li>
                     <li>{user.email}</li>
                     <li>
